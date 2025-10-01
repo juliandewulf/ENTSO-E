@@ -110,7 +110,8 @@ docker-build:
 
 docker-run:
 	@echo "🐳 Running Docker container..."
-	docker run -p 3000:3000 zaphiro-dashboard
+	@ENV_FILE=$$(if [ -f .env.production ]; then echo ".env.production"; else echo ".env"; fi); \
+	docker run -p 3000:3000 --env-file $$ENV_FILE zaphiro-dashboard
 
 # Cleanup
 clean:
