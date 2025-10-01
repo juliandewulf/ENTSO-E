@@ -2,7 +2,7 @@
 
 A React TypeScript dashboard that visualizes electricity generation data from the ENTSO-E Transparency Platform. The application displays real-time electricity generation by type for European countries with interactive charts and summary statistics.
 
-![Dashboard Preview](https://github.com/juliandewulf)
+![Dashboard Preview](https://entso-e.juliandewulf.com/)
 
 ## Features
 
