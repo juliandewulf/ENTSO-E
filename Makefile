@@ -105,7 +105,7 @@ build-storybook:
 # Docker Production
 docker-build:
 	@echo "🐳 Building Docker image..."
-	docker build -t zaphiro-dashboard .
+	docker build -f deployment/Dockerfile -t zaphiro-dashboard .
 	@echo "✅ Docker image built!"
 
 docker-run:
