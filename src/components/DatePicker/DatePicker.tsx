@@ -32,9 +32,9 @@ const DatePicker: React.FC<DatePickerProps> = ({
 
   const formatDate = (date: Date | null): DateString => {
     if (!date || !isValid(date)) {
-      return format(new Date(), 'yyyy-MM-dd');
+      return format(new Date(), 'yyyyMMdd');
     }
-    return format(date, 'yyyy-MM-dd');
+    return format(date, 'yyyyMMdd');
   };
 
   const handleDateChange = (newDate: Date | null) => {
