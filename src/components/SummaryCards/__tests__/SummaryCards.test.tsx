@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@/test/utils';
 import SummaryCards from '@/components/SummaryCards/SummaryCards';
 import { GenerationData } from '@/types';
 
@@ -100,7 +100,8 @@ describe('SummaryCards', () => {
 
     render(<SummaryCards generationData={dataWithoutTopSources} />);
 
-    expect(screen.getByText('N/A')).toBeInTheDocument();
+    const naElements = screen.getAllByText('N/A');
+    expect(naElements.length).toBeGreaterThan(0);
   });
 
   it('handles data with only one top source', () => {

@@ -10,6 +10,19 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
+  server: {
+    proxy: {
+      '/api/entsoe': {
+        target: 'https://web-api.tp.entsoe.eu',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/entsoe/, ''),
+        headers: {
+          'User-Agent': 'Zaphiro Energy Dashboard',
+        },
+      },
+    },
+  },
+  // @ts-expect-error - Vitest config
   test: {
     globals: true,
     environment: 'jsdom',

@@ -34,7 +34,7 @@ export interface ApiResponse<T> {
   loading: boolean;
 }
 
-export type DateString = string; // ISO date string (YYYY-MM-DD)
+export type DateString = string; // ISO date string (yyyyMMdd)
 
 export interface ChartDataPoint {
   label: string;

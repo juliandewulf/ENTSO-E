@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Box, Typography, useTheme } from '@mui/material';
 import {
   ElectricBolt,
-  Bolt,
+  Recycling,
   TrendingUp,
   EmojiObjects,
   Analytics,
@@ -37,7 +37,7 @@ const SummaryCards: React.FC<SummaryCardsProps> = ({
       title: 'Renewable Energy',
       value: loading ? '...' : `${renewablePercentage.toFixed(1)}%`,
       subtitle: 'Percentage from renewable sources',
-      icon: Bolt,
+      icon: Recycling,
       color: 'success' as const,
     },
     {

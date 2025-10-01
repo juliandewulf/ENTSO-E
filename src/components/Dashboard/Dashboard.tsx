@@ -21,13 +21,14 @@ import SummaryCards from '@/components/SummaryCards';
 import { useGenerationData } from '@/hooks/useGenerationData';
 import { Country, DateString } from '@/types';
 import { DEFAULT_COUNTRY } from '@/utils/constants';
+import { formatDateString } from '@/utils/formatting';
 
 const Dashboard: React.FC = () => {
   const theme = useTheme();
   const [selectedCountry, setSelectedCountry] =
     useState<Country>(DEFAULT_COUNTRY);
   const [selectedDate, setSelectedDate] = useState<DateString>(
-    format(new Date(), 'yyyy-MM-dd')
+    format(new Date(), 'yyyyMMdd')
   );
   const [chartType, setChartType] = useState<'bar' | 'pie'>('bar');
 
@@ -260,7 +261,7 @@ const Dashboard: React.FC = () => {
           <GenerationChart
             generationData={data.generationByType}
             totalGeneration={data.totalGeneration}
-            title={`Generation Mix - ${selectedCountry.name} (${selectedDate})`}
+            title={`Generation Mix - ${selectedCountry.name} (${formatDateString(selectedDate)})`}
             chartType={chartType}
             onChartTypeChange={handleChartTypeChange}
           />

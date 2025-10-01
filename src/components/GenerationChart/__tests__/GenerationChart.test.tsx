@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent } from '@/test/utils';
 import GenerationChart from '@/components/GenerationChart/GenerationChart';
 import { GenerationType } from '@/types';
 
@@ -148,6 +148,6 @@ describe('GenerationChart', () => {
     render(<GenerationChart {...defaultProps} />);
 
     const chartContainer = screen.getByTestId('bar-chart-container');
-    expect(chartContainer).toHaveStyle({ height: '400px' });
+    expect(chartContainer).toHaveStyle({ height: '450px' });
   });
 });

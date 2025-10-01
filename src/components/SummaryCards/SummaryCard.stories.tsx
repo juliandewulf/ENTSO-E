@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ElectricBolt, Bolt, TrendingUp, Warning } from '@mui/icons-material';
+import { ElectricBolt, Recycling, TrendingUp, Warning } from '@mui/icons-material';
 import SummaryCard from './SummaryCard';
 
 const meta: Meta<typeof SummaryCard> = {
@@ -49,7 +49,7 @@ export const RenewablePercentage: Story = {
     title: 'Renewable Energy',
     value: '65.3%',
     subtitle: 'Percentage from renewable sources',
-    icon: Bolt,
+    icon: Recycling,
     color: 'success',
     trend: {
       value: 12.5,

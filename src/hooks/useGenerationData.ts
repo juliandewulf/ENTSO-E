@@ -14,7 +14,8 @@ export const useGenerationData = (
 
   const fetchData = useCallback(async () => {
     setData((prev) => ({ ...prev, loading: true, error: undefined }));
-
+    console.log("SelectedDate:", selectedDate);
+    console.log("SelectedCountry:", selectedCountry);
     try {
       const generationData = await entsoeApi.getGenerationData(
         selectedCountry.code,
