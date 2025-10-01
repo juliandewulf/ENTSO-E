@@ -5,10 +5,10 @@ export const zaphiroColors = {
   // Primary Accent / Highlight
   turboYellow: '#ECF100',
 
-  // Dark Background / Base
-  charcoal: '#1A1F27',
-  charcoalLight: '#242B35',
-  charcoalDark: '#141920',
+  // Dark Background / Base - Much darker for modern look
+  charcoal: '#0A0B0D',
+  charcoalLight: '#131419',
+  charcoalDark: '#050507',
 
   // Surface / Text Light
   white: '#FFFFFF',
@@ -21,9 +21,9 @@ export const zaphiroColors = {
   cyanDark: '#0099CC',
 
   // Neutral / Gray for UI elements
-  midGray: '#9AA0A6',
-  darkGray: '#6C7074',
-  borderGray: '#3A4047',
+  midGray: '#8A9299',
+  darkGray: '#5C6267',
+  borderGray: '#1A1D21',
 
   // Status Colors
   success: '#4CAF50',
@@ -84,7 +84,7 @@ const themeOptions: ThemeOptions = {
 
     // Custom accent color
     accent: {
-      main: zaphiroColors.cyan,
+      main: zaphiroColors.turboYellow,
       light: zaphiroColors.cyanLight,
       dark: zaphiroColors.cyanDark,
       contrastText: zaphiroColors.white,
@@ -93,7 +93,7 @@ const themeOptions: ThemeOptions = {
     // Surface colors for cards and elevated content
     surface: {
       main: zaphiroColors.charcoalLight,
-      elevated: '#2A3140',
+      elevated: '#1A1D23',
       border: zaphiroColors.borderGray,
     },
 
@@ -228,30 +228,30 @@ const themeOptions: ThemeOptions = {
 
   shadows: [
     'none',
-    '0px 1px 3px rgba(0, 0, 0, 0.3)',
-    '0px 2px 6px rgba(0, 0, 0, 0.25)',
-    '0px 4px 12px rgba(0, 0, 0, 0.2)',
-    '0px 6px 18px rgba(0, 0, 0, 0.15)',
-    '0px 8px 24px rgba(0, 0, 0, 0.12)',
-    '0px 12px 36px rgba(0, 0, 0, 0.1)',
-    '0px 16px 48px rgba(0, 0, 0, 0.08)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
-    '0px 24px 60px rgba(0, 0, 0, 0.06)',
+    '0px 1px 3px rgba(0, 0, 0, 0.6)',
+    '0px 2px 6px rgba(0, 0, 0, 0.5)',
+    '0px 4px 12px rgba(0, 0, 0, 0.4)',
+    '0px 6px 18px rgba(0, 0, 0, 0.35)',
+    '0px 8px 24px rgba(0, 0, 0, 0.3)',
+    '0px 12px 36px rgba(0, 0, 0, 0.25)',
+    '0px 16px 48px rgba(0, 0, 0, 0.2)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
+    '0px 24px 60px rgba(0, 0, 0, 0.15)',
   ],
 };
 
@@ -268,10 +268,10 @@ export const extendedZaphiroTheme = createTheme(zaphiroTheme, {
           border: `1px solid ${zaphiroColors.borderGray}`,
         },
         elevation1: {
-          boxShadow: `0px 1px 3px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px ${zaphiroColors.borderGray}`,
+          boxShadow: `0px 1px 3px rgba(0, 0, 0, 0.6), 0px 0px 0px 1px ${zaphiroColors.borderGray}`,
         },
         elevation2: {
-          boxShadow: `0px 2px 6px rgba(0, 0, 0, 0.25), 0px 0px 0px 1px ${zaphiroColors.borderGray}`,
+          boxShadow: `0px 2px 6px rgba(0, 0, 0, 0.5), 0px 0px 0px 1px ${zaphiroColors.borderGray}`,
         },
       },
     },

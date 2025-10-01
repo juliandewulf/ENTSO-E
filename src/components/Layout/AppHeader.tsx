@@ -10,8 +10,8 @@ const AppHeader: React.FC = () => {
       component="header"
       sx={{
         position: 'relative',
-        py: 6,
-        px: 4,
+        py: 4,
+        px: 2,
         borderBottom: `1px solid ${theme.palette.divider}`,
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
         overflow: 'hidden',
@@ -30,7 +30,7 @@ const AppHeader: React.FC = () => {
             linear-gradient(${theme.palette.accent.main} 1px, transparent 1px),
             linear-gradient(90deg, ${theme.palette.accent.main} 1px, transparent 1px)
           `,
-          backgroundSize: '40px 40px',
+          backgroundSize: '60px 40px',
         }}
       />
 
@@ -70,7 +70,7 @@ const AppHeader: React.FC = () => {
         >
           <ElectricBolt
             sx={{
-              fontSize: 32,
+              fontSize: 24,
               color: theme.palette.primary.main,
             }}
           />
