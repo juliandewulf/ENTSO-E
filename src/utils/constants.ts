@@ -44,7 +44,9 @@ export const RENEWABLE_TYPES = [
 ];
 
 export const API_CONFIG = {
-  BASE_URL: '/api/entsoe',
+  BASE_URL: import.meta.env.VITE_STATIC_DEPLOY === 'true' 
+    ? 'https://web-api.tp.entsoe.eu'
+    : '/api/entsoe',
   TOKEN: import.meta.env.VITE_ENTSOE_API_TOKEN,
   USE_MOCK_DATA: import.meta.env.VITE_USE_MOCK_DATA === 'true',
   ENDPOINTS: {
