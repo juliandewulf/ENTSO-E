@@ -4,8 +4,8 @@ import {
   formatPowerValue,
   calculatePercentage,
   sortGenerationByValue,
-} from '../dataProcessing';
-import { GenerationType } from '../../types';
+} from '@/utils/dataProcessing';
+import { GenerationType } from '@/types';
 
 const mockGenerationTypes: GenerationType[] = [
   {

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import CountrySelector from './CountrySelector';
-import { COUNTRIES } from '../../utils/constants';
+import { COUNTRIES } from '@/utils/constants';
 
 const meta: Meta<typeof CountrySelector> = {
   title: 'Components/CountrySelector',

@@ -8,8 +8,8 @@ import {
   Analytics,
 } from '@mui/icons-material';
 import SummaryCard from './SummaryCard';
-import { GenerationData } from '../../types';
-import { formatPowerValue } from '../../utils/dataProcessing';
+import { GenerationData } from '@/types';
+import { formatPowerValue } from '@/utils/dataProcessing';
 
 interface SummaryCardsProps {
   generationData: GenerationData;

@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import GenerationChart from '../GenerationChart';
-import { GenerationType } from '../../../types';
+import GenerationChart from '@/components/GenerationChart/GenerationChart';
+import { GenerationType } from '@/types';
 
 // Mock Chart.js components
 vi.mock('react-chartjs-2', () => ({

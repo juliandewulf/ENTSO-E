@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import GenerationChart from './GenerationChart';
-import { GenerationType } from '../../types';
+import { GenerationType } from '@/types';
 
 const mockGenerationData: GenerationType[] = [
   {
@@ -109,7 +109,7 @@ export const WithoutToggle: Story = {
     totalGeneration: 65200,
     title: 'Static Bar Chart (No Toggle)',
     chartType: 'bar',
-    // onChartTypeChange is undefined, so no toggle buttons will show
+    onChartTypeChange: undefined,
   },
 };
 

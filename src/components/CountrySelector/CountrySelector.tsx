@@ -6,8 +6,8 @@ import {
   MenuItem,
   SelectChangeEvent,
 } from '@mui/material';
-import { Country } from '../../types';
-import { COUNTRIES } from '../../utils/constants';
+import { Country } from '@/types';
+import { COUNTRIES } from '@/utils/constants';
 
 interface CountrySelectorProps {
   selectedCountry: Country;

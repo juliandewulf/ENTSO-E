@@ -1,4 +1,4 @@
-import { GenerationData, GenerationType } from '../types';
+import { GenerationData, GenerationType } from '@/types';
 import { GENERATION_TYPE_COLORS } from './constants';
 
 export const parseGenerationData = (

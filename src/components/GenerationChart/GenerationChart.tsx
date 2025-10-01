@@ -19,12 +19,12 @@ import {
   useTheme,
 } from '@mui/material';
 import { BarChart, PieChart, ShowChart } from '@mui/icons-material';
-import { GenerationType } from '../../types';
+import { GenerationType } from '@/types';
 import {
   formatPowerValue,
   calculatePercentage,
-} from '../../utils/dataProcessing';
-import { zaphiroColors } from '../../theme/zaphiroTheme';
+} from '@/utils/dataProcessing';
+import { zaphiroColors } from '@/theme/zaphiroTheme';
 
 ChartJS.register(
   CategoryScale,

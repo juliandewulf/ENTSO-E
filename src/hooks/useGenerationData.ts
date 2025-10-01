@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
-import { GenerationData, ApiResponse, Country, DateString } from '../types';
-import { entsoeApi } from '../services/entsoeApi';
+import { GenerationData, ApiResponse, Country, DateString } from '@/types';
+import { entsoeApi } from '@/services/entsoeApi';
 
 export const useGenerationData = (
   selectedCountry: Country,

@@ -2,7 +2,7 @@ import React from 'react';
 import { DatePicker as MuiDatePicker } from '@mui/x-date-pickers/DatePicker';
 import { TextField } from '@mui/material';
 import { format, parseISO, isValid } from 'date-fns';
-import { DateString } from '../../types';
+import { DateString } from '@/types';
 
 interface DatePickerProps {
   selectedDate: DateString;

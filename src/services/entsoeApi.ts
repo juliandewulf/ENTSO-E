@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
-import { GenerationData, ApiError } from '../types';
-import { API_CONFIG } from '../utils/constants';
+import { GenerationData, ApiError } from '@/types';
+import { API_CONFIG } from '@/utils/constants';
 import { getMockGenerationData } from './mockData';
-import { parseGenerationData } from '../utils/dataProcessing';
+import { parseGenerationData } from '@/utils/dataProcessing';
 
 class EntsoeApiService {
   private baseURL: string;

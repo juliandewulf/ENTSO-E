@@ -14,13 +14,13 @@ import {
 import { Refresh, Settings } from '@mui/icons-material';
 import { format } from 'date-fns';
 
-import CountrySelector from '../CountrySelector';
-import DatePicker from '../DatePicker';
-import GenerationChart from '../GenerationChart';
-import SummaryCards from '../SummaryCards';
-import { useGenerationData } from '../../hooks/useGenerationData';
-import { Country, DateString } from '../../types';
-import { DEFAULT_COUNTRY } from '../../utils/constants';
+import CountrySelector from '@/components/CountrySelector';
+import DatePicker from '@/components/DatePicker';
+import GenerationChart from '@/components/GenerationChart';
+import SummaryCards from '@/components/SummaryCards';
+import { useGenerationData } from '@/hooks/useGenerationData';
+import { Country, DateString } from '@/types';
+import { DEFAULT_COUNTRY } from '@/utils/constants';
 
 const Dashboard: React.FC = () => {
   const theme = useTheme();

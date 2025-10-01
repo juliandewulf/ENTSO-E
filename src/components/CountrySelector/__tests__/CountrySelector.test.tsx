@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import CountrySelector from '../CountrySelector';
-import { COUNTRIES } from '../../../utils/constants';
+import CountrySelector from '@/components/CountrySelector/CountrySelector';
+import { COUNTRIES } from '@/utils/constants';
 
 const mockOnCountryChange = vi.fn();
 

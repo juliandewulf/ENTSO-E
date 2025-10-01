@@ -1,5 +1,5 @@
-import { GenerationData, GenerationType } from '../types';
-import { GENERATION_TYPE_COLORS, RENEWABLE_TYPES } from '../utils/constants';
+import { GenerationData, GenerationType } from '@/types';
+import { GENERATION_TYPE_COLORS, RENEWABLE_TYPES } from '@/utils/constants';
 
 const createGenerationType = (
   type: string,

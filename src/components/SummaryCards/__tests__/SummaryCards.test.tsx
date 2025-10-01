@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import SummaryCards from '../SummaryCards';
-import { GenerationData } from '../../../types';
+import SummaryCards from '@/components/SummaryCards/SummaryCards';
+import { GenerationData } from '@/types';
 
 const mockGenerationData: GenerationData = {
   country: 'IT',

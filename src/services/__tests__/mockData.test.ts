@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getMockGenerationData, MOCK_GENERATION_DATA } from '../mockData';
+import { getMockGenerationData, MOCK_GENERATION_DATA } from '@/services/mockData';
 
 describe('mockData service', () => {
   describe('getMockGenerationData', () => {

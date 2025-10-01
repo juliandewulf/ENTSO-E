@@ -4,6 +4,8 @@ import { createTheme, ThemeOptions } from '@mui/material/styles';
 export const zaphiroColors = {
   // Primary Accent / Highlight
   turboYellow: '#ECF100',
+  turboYellowLight: '#F4F533',
+  turboYellowDark: '#D6DC00',
 
   // Dark Background / Base - Much darker for modern look
   charcoal: '#0A0B0D',
@@ -69,8 +71,8 @@ const themeOptions: ThemeOptions = {
     // Primary - Turbo Yellow for highlights and main accents
     primary: {
       main: zaphiroColors.turboYellow,
-      light: '#F4F533',
-      dark: '#D6DC00',
+      light: zaphiroColors.turboYellowLight,
+      dark: zaphiroColors.turboYellowDark,
       contrastText: zaphiroColors.charcoal,
     },
 
@@ -85,8 +87,8 @@ const themeOptions: ThemeOptions = {
     // Custom accent color
     accent: {
       main: zaphiroColors.turboYellow,
-      light: zaphiroColors.cyanLight,
-      dark: zaphiroColors.cyanDark,
+      light: zaphiroColors.turboYellowLight,
+      dark: zaphiroColors.turboYellowDark,
       contrastText: zaphiroColors.white,
     },
 
